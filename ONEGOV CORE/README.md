@@ -1,4 +1,4 @@
-# ONEGOV – Run with Docker (Expo)
+# ONEGOV CORE – Run with Docker (Expo)
 
 This repository is an Expo React Native app. The Docker setup runs the Metro bundler and Expo DevTools inside a container so you can develop without installing Node/Expo locally.
 
@@ -141,74 +141,3 @@ Subsequent code edits will hot-reload automatically without rebuilding.
 ```sh
 docker image prune
 ```
-
-## Repository structure
-
-```
-.
-├─ Dockerfile
-├─ docker-compose.yml
-├─ package.json
-├─ tsconfig.json
-├─ App.js
-├─ index.js
-├─ app.json
-├─ app/
-│  ├─ Dashboard/
-│  │  ├─ AIChat.tsx
-│  │  ├─ AIHome.tsx
-│  │  ├─ AIResponse.tsx
-│  │  ├─ main.tsx
-│  │  ├─ notifications.tsx
-│  │  ├─ search.tsx
-│  │  └─ settings.tsx
-│  ├─ lib/
-│  │  ├─ appwrite.ts
-│  │  └─ auth-context.tsx
-│  ├─ Login/
-│  │  ├─ _layout.tsx
-│  │  ├─ LoginScreen.js
-│  │  ├─ OtpScreen.js
-│  │  ├─ RegisterScreen.js
-│  │  ├─ SuccessScreen.js
-│  │  └─ WelcomeScreen.js
-│  ├─ Add_birth_certi.tsx
-│  ├─ birth_certi.tsx
-│  ├─ citizenID.tsx
-│  ├─ DS_Fees.tsx
-│  ├─ End_QR.tsx
-│  ├─ Navigation.tsx
-│  ├─ NIC_form.tsx
-│  ├─ NIC.tsx
-│  ├─ pay.tsx
-│  ├─ photo.tsx
-│  ├─ Progress.tsx
-│  ├─ request.tsx
-│  └─ Select_GN_DS.tsx
-├─ assets/
-│  ├─ adaptive-icon.png
-│  ├─ favicon.png
-│  ├─ icon.png
-│  └─ splash-icon.png
-├─ src/
-│  ├─ hooks/
-│  │  └─ useImageUpload.js
-│  └─ services/
-│     ├─ appwrite.js
-│     └─ imageUploadService.js
-├─ .vscode/
-├─ .qodo/
-├─ .dockerignore
-├─ .gitignore
-└─ README.md
-```
-
-### Directory guide
-- app/: Expo Router app directory with screens and navigation.
-  - app/Dashboard/: AI-related dashboard screens and utilities.
-  - app/lib/: Shared libraries such as Appwrite client and auth context.
-  - app/Login/: Authentication screens and layout.
-- assets/: App icons and splash images used by Expo.
-- src/services/: Service layer (Appwrite SDK integration, image upload helpers).
-- src/hooks/: Reusable React hooks.
-- Dockerfile and docker-compose.yml: Containerized dev environment for Expo/Metro.
