@@ -131,12 +131,12 @@ async function sendDataFunc() {
     const newId = (sendData as any)?.$id ?? (sendData as any)?.id;
     setCreatedCitizenId(newId ?? null);
     Alert.alert('Information submitted successfully!');
-    // Navigate to Progress and pass the created document id
+    /* Navigate to Progress and pass the created document id
     if (newId) {
       navigation.navigate('Progress', { citizenId: newId });
     } else {
       console.warn('No document id returned from Appwrite');
-    }
+    }*/
   } catch (error) {
     console.error('Error creating document:', error);
     Alert.alert('Failed to submit information. Please try again.');
