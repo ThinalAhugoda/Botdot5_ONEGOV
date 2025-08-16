@@ -12,13 +12,13 @@ Files of interest:
 - A phone with [Expo Go app](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) installed (for running on device), or an Android/iOS emulator
 
 ## Before you start...
-- ONEGOV
+- ONEGOV.
 In order to access and run ONEGOV which is made for citizens, make sure to change the directory to ONEGOV.
 ```sh
 cd ONEGOV
 ```
 
-- ONEGOVE CORE 
+- ONEGOVE CORE. 
 In order to access and run ONEGOVE CORE which is the app for government officials, make sure to change the directory to ONEGOVE CORE.
 ```sh
 cd ONEGOVE CORE
