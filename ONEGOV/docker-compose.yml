@@ -4,7 +4,6 @@ services:
     image: onegov_img     
     build: .              
     ports:
-      - "8081:8081"
       - "19000:19000"
       - "19001:19001"
       - "19002:19002"
