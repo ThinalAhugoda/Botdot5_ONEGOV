@@ -17,7 +17,7 @@ const Select_GN_DS = () => {
 
   const client = new Client()
     .setEndpoint('https://fra.cloud.appwrite.io/v1')
-    .setProject('689da5b30029c853a500');
+    .setProject('');
   const databases = new Databases(client);
   
   const data = {

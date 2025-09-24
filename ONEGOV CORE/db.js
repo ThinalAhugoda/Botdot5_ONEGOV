@@ -3,7 +3,7 @@ import fs from "fs";
 
 const client = new Client()
     .setEndpoint("https://YOUR_APPWRITE_ENDPOINT/v1") // Your Appwrite endpoint
-    .setProject("689da5b30029c853a500") // Your Appwrite project ID
+    .setProject("") // Your Appwrite project ID
     .setKey("YOUR_API_KEY"); // API key with database read permissions
 
 const databases = new Databases(client);

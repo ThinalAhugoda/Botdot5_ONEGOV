@@ -111,7 +111,7 @@ const data = {
 
 const client = new Client()
   .setEndpoint('https://fra.cloud.appwrite.io/v1')
-  .setProject('689da5b30029c853a500');
+  .setProject('');
 const databases = new Databases(client);
 
 /* send info to database */
@@ -165,7 +165,7 @@ async function sendImage(imageFile: any, imageFileName: any) {
 
   const client2 = new nativeClient()
     .setEndpoint('https://fra.cloud.appwrite.io/v1')
-    .setProject('689da5b30029c853a500');
+    .setProject('');
 
   const storages2 = new nativeStorage(client2);
 
